@@ -1,0 +1,13 @@
+# Ignore dependencies
+**/node_modules
+**/__pycache__
+
+# Ignore secrets
+**/.env
+
+# Ignore database files
+**/weaviate_data
+**/weaviate_binary
+
+# Ignore Mac system files
+.DS_Store

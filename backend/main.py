@@ -48,13 +48,12 @@ app.add_middleware(
 )
 
 # Configuration
-NASA_API_KEY = 'API_Key'
-NASA_API_URL = 'api url'
-
+NASA_API_KEY = os.getenv("NASA_API_KEY")
+NASA_API_URL = 'https://api.nasa.gov/neo/rest/v1/feed' # Keep the URL hardcoded unless it changes
 EARTH_RADIUS_KM = 6371
 LUNAR_DISTANCE_KM = 384400
 
-OPENROUTER_API_KEY = "API_Key"
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 CHAT_MODEL = "qwen/qwen-2.5-7b-instruct"
 
 openrouter_client = OpenAI(
