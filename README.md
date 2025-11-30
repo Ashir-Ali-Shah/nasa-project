@@ -1,4 +1,6 @@
-# 🌌 NASA NEO (Near Earth Object) Analytics & Hazard Prediction 🚀
+Here is a `README.md` file incorporating the quantitative metrics from your results. I've formatted it to be professional, clear, and informative for anyone viewing your project on GitHub.
+
+# 🌌 NASA NEO Analytics & Hazard Prediction 🚀
 
 A full-stack planetary defense analytics platform that tracks Near-Earth Objects (asteroids) using NASA's NeoWs API. It features an interactive dashboard for real-time tracking, an AI chatbot for data analysis, and a high-performance Machine Learning model to predict hazardous asteroids.
 
@@ -58,17 +60,50 @@ Which physical properties make an asteroid dangerous? The model found **Absolute
 * API Keys for NASA and OpenRouter
 
 ### 1. Clone & Configure
-
-git clone [https://github.com/Ashir-Ali-Shah/nasa-project.git](https://github.com/Ashir-Ali-Shah/nasa-project.git)
-
-cd nasa-project
+```bash
+git clone [https://github.com/your-username/nasa-neo-analytics.git](https://github.com/your-username/nasa-neo-analytics.git)
+cd nasa-neo-analytics
 
 # Create a .env file in the backend folder
 echo "NASA_API_KEY=your_key_here" > backend/.env
-
 echo "OPENROUTER_API_KEY=your_key_here" >> backend/.env
+````
 
-2. Launch with Docker
+### 2\. Launch with Docker
+
 Run the entire stack (Frontend + Backend + Database) with one command:
 
+```bash
 docker compose up --build
+```
+
+  * **Dashboard:** [http://localhost:5173](https://www.google.com/search?q=http://localhost:5173)
+  * **API Docs:** [http://localhost:8000/docs](https://www.google.com/search?q=http://localhost:8000/docs)
+
+## 📂 Project Structure
+
+```text
+nasa-neo-analytics/
+├── backend/             # FastAPI & ML Logic
+│   ├── main.py          # API Endpoints
+│   ├── xgb_neo_classifier.pkl # Trained Model
+│   └── Dockerfile
+├── frontend/            # React Dashboard
+│   ├── src/             # UI Components
+│   └── Dockerfile
+└── docker-compose.yml   # Orchestration
+```
+
+-----
+
+## 📈 Dataset Info
+
+The model was trained on data fetched dynamically from NASA.
+
+  * **Hazardous Distribution:** \~90% Safe / \~10% Hazardous
+  * **Missing Values:** Imputed using mean strategy.
+  * **Scaling:** Standard Scaler applied to all numerical features.
+
+
+```
+```
