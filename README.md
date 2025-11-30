@@ -59,7 +59,7 @@ Which physical properties make an asteroid dangerous? The model found **Absolute
 
 ### 1. Clone & Configure
 
-git clone [[https://github.com/Ashir-Ali-Shah/nasa-project.git](https://github.com/Ashir-Ali-Shah/nasa-project.git)]
+git clone [https://github.com/Ashir-Ali-Shah/nasa-project.git](https://github.com/Ashir-Ali-Shah/nasa-project.git)
 
 cd nasa-project
 
